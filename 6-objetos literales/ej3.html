@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = (window.prompt("Intrroduce un número: "))
+
+        if(num<100){
+
+            document.getElementById("num").style.color = "green";
+            document.getElementById("num").innerHTML = num;
+
+         }else if (num >= 100 && num <= 200){
+
+            document.getElementById("num").style.color = "yellow";
+            document.getElementById("num").innerHTML = num;
+         
+         }else if (num > 200){
+
+            document.getElementById("num").style.color = "red";
+            document.getElementById("num").innerHTML = num;
+         }
+
+         document.appendChild(num)
+
+    </script>
+    
+</body>
+</html>
