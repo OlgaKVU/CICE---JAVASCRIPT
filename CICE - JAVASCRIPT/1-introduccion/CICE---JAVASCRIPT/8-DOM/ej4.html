@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = window.prompt("Introduce tu nombre: ");
+        let edad = parseInt(window.prompt("Introduce tu edad: "));
+
+        let contenido = document.createElement('h1')
+
+        if(edad>=18){
+
+            contenido.innerText = `Hola ${nombre}, eres mayor de edad`,contenido.style.color='blue'
+        }else{
+            contenido.innerText = `Hola ${nombre},no eres mayor de edad!`,contenido.style.color='green'
+        }
+        document.body.appendChild(contenido)
+    </script>
+</body>
+</html>
